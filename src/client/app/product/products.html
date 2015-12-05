@@ -1,10 +1,27 @@
 <template>
 
+    <require from="../core/date"></require>
     <h3>Products List</h3>
 
     <ul>
         <li repeat.for="product of products">
-            ${product.name}
+            ${product.name} - ${product.price}
+
+            <h3>Reviews</h3>
+            <ul>
+                <li repeat.for="review of product.reviews">
+                    <div class="review">
+                        <div class="review-header">
+                            <strong>${review.author}</strong> 
+                            <br />
+                            <span class="reviewDate">${review.createdOn | date: "D/M/YY"}</span>
+                        </div>
+                        <div>
+                            ${review.comments}    
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </li>
     </ul>
 

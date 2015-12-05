@@ -16,3 +16,9 @@ a {
 footer {
   clear: both;
 }
+.reviewDate {
+  padding: 5px;
+  border-radius: 5px;
+  background: #0f0;
+  opacity: 0.8;
+}

@@ -1,5 +1,5 @@
-angular.module("app.core").run(["$templateCache", function($templateCache) {$templateCache.put("app/app.html","<template><div class=site-container><header><h1>wumart</h1><nav-menu router.bind=router></nav-menu></header><router-view></router-view><footer>WU-Mart &copy; ${year}</footer></div></template>");
+angular.module("app.core").run(["$templateCache", function($templateCache) {$templateCache.put("app/app.html","<template><div class=site-container><header><h1>Wu-Mart</h1><nav-menu router.bind=router></nav-menu></header><router-view></router-view><footer class=text-center>WU-Mart &copy; ${year}</footer></div></template>");
 $templateCache.put("app/about/about.html","<template><h3>About page</h3></template>");
-$templateCache.put("app/core/navMenu.html","<template><ul><li repeat.for=\"nav of router.navigation\"><a href.bind=nav.href>${nav.title}</a></li></ul></template>");
+$templateCache.put("app/core/navMenu.html","<template><ul class=nav-list><li repeat.for=\"nav of router.navigation\"><a href.bind=nav.href>${nav.title}</a></li></ul></template>");
 $templateCache.put("app/home/home.html","<template><h3>Home Page</h3><p>Welcome to Wu-Mart an online competitor to the major whole-salers of daily items.</p></template>");
-$templateCache.put("app/product/products.html","<template><h3>Products</h3></template>");}]);
+$templateCache.put("app/product/products.html","<template><h3>Products List</h3><ul><li repeat.for=\"product of products\">${product.name}<h3>Reviews</h3><ul><li repeat.for=\"review of product.reviews\"><div class=review><div class=review-header><strong>${review.author}</strong> ${review.createdOn : date: \"dd/M/yy\"}</div><div>${review.comments}</div></div></li></ul></li></ul></template>");}]);
