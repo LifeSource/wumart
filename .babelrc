@@ -1,0 +1,13 @@
+{
+    "presets": ["es2015"],
+    "plugins": [
+        "syntax-async-functions",
+        "syntax-async-generators",
+        "syntax-decorators",
+        "syntax-function-bind",
+        "syntax-class-properties",
+        "syntax-export-extensions",
+        "syntax-class-constructor-call",
+        "transform-es2015-modules-commonjs"
+    ]
+}

@@ -1,0 +1,5 @@
+angular.module("app.core").run(["$templateCache", function($templateCache) {$templateCache.put("app/app.html","<template><div class=site-container><header><h1>wumart</h1><nav-menu router.bind=router></nav-menu></header><router-view></router-view><footer>WU-Mart &copy; ${year}</footer></div></template>");
+$templateCache.put("app/about/about.html","<template><h3>About page</h3></template>");
+$templateCache.put("app/core/navMenu.html","<template><ul><li repeat.for=\"nav of router.navigation\"><a href.bind=nav.href>${nav.title}</a></li></ul></template>");
+$templateCache.put("app/home/home.html","<template><h3>Home Page</h3><p>Welcome to Wu-Mart an online competitor to the major whole-salers of daily items.</p></template>");
+$templateCache.put("app/product/products.html","<template><h3>Products</h3></template>");}]);

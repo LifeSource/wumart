@@ -1,0 +1,19 @@
+.site-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .site-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header,
+  footer {
+    width: 100%;
+  }
+}

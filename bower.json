@@ -1,0 +1,16 @@
+{
+    "name": "wumart",
+    "version": "1.0.0",
+    "description": "wumart",
+    "authors": [],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+    }
+}

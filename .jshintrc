@@ -1,0 +1,8 @@
+{
+    "curly": true,
+    "indent": 4,
+    "quotmark": false,
+    "browser": true,
+    "node": true,
+    "esnext": true
+}
